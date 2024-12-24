@@ -1,0 +1,7 @@
+1.npm init -y
+2.npm i express 
+3.Create app.js
+4.run->node app.js
+mongodb+srv://gopithammisetti6:6OdiZJMM3QwtyBdN@cluster0.62vqegu.mongodb.net/netflixClone
+npm i dotenv cors body-parser hbs mongoose express-seeion connect-mongo passport passport-local passport-local-mongoose nodemon
+Tmdb

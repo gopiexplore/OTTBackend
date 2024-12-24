@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Movie</title>
+</head>
+<body>
+    <h1>Edit Movie</h1>
+    <a href="/">Go to Dashboard</a>
+    {{#each movies}}
+    <div class="moviesDetailsContainer">
+        <div class="posterContainer">
+        <img src="https://image.tmdb.org/t/p/original/{{this.posterPath}}" alt="Movie Poster" srcset="">
+
+        </div>
+        <div class="detailsTextContainer">
+            <a href="/movies/{{_id}}">
+                <h2>{{this.title}}</h2>
+            </a>
+            <p style="font-size: 0.8em; margin: bottom 5px;">{{this.overview}}</p>
+            <p style="font-size: 0.8em; font-weight:bold">Release Date:{{this.releaseDate}}</p>
+        </div>
+    </div>
+    {{/each}}
+</body>
+<style>
+    .movieDetailsContainer{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.posterContainer{
+    margin-right: 20px;
+}
+.detailsTextContainer{
+    text-align: left;
+}
+</style>
+</html>
